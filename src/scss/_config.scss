@@ -1,0 +1,28 @@
+// Color Variables
+$primary-dark-color: #000000;
+$secondary-dark-color: #e1e1e1;
+$primary-light-color: #ffffff;
+$secondary-light-color: #d3d3d3;
+
+// Size Variables
+$container-width: 1100px;
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Staatliches", sans-serif;
+  color: $primary-dark-color;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: $primary-dark-color;
+}

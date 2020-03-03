@@ -1,0 +1,155 @@
+@import "config", "utilities";
+
+#nav-bar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+  background-color: $primary-light-color;
+  border-bottom: $secondary-dark-color 1px solid;
+  #nav-bar-content{
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    //margin: 1rem;
+    #nav-menu{
+      display: flex;
+      li{
+        padding: 0 0.75rem;
+        font-size: 1.3rem;
+      }
+      a:hover{
+        color: $secondary-dark-color;
+      }
+    }
+
+  }
+}
+
+#welcome-section{
+  //height: 100vh;
+  width: 100%;
+  #welcome-video{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  #welcome-content{
+    background: rgba(0,0,0, 0.3);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $primary-light-color;
+    h1{
+      font-size: 6.5rem;
+      margin-bottom: 1rem;
+    }
+    p{
+      font-size: 1.5rem;
+      margin-bottom: 4rem;
+    }
+    .arrow{
+      font-size: 5rem;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-30px);
+      }
+      60% {
+        transform: translateY(-15px);
+      }
+    }
+  }
+}
+
+#quote-section{
+  position: relative;
+  height: 40vh;
+  background: $primary-light-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  #quote-section-content{
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    #quote-title{
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    #quote-paragraph{
+      font-size: 1.5rem;
+      color: rgba($primary-dark-color, 0.65);
+      margin-bottom: 1.7rem;
+    }
+    #quote-author{
+      font-size: 1.2rem;
+      color: rgba($primary-dark-color, 0.7);
+    }
+  }
+}
+
+
+#attractions{
+  height: 80vh;
+  //width: 100vw;
+  background-color: $secondary-dark-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  #attractions-content{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    #attractions-title{
+      font-family: Lato, sans-serif;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    #attractions-paragraph{
+      font-family: Lato, sans-serif;
+      font-size: 1.2rem;
+    }
+    #attractions-gallery{
+      display: grid;
+      border: 5px solid $primary-light-color;
+      margin-top: 2rem;
+      grid-template-areas:
+              "dome street lighthouse"
+              "dome ferris-wheel field";
+      #street{
+        grid-area: street;
+      }
+      #ferris-wheel{
+        grid-area: ferris-wheel;
+      }
+      #lighthouse{
+        grid-area: lighthouse;
+      }
+      #field{
+        grid-area: field;
+      }
+      #dome{
+        //height: 59vh;
+        grid-area: dome;
+      }
+      img {
+       border: 5px solid white;
+      }
+    }
+  }
+}

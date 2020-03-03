@@ -1,0 +1,21 @@
+// Utility Classes
+@import "config";
+
+.logo{
+  font-size: 2.4rem;
+}
+
+.center-in-container{
+  margin: auto 0;
+}
+
+.container{
+  max-width: $container-width;
+  margin: auto;
+}
+
+.round-button{
+  background: #c4c4c4;
+  padding: 0.2rem 0.5rem;
+  border-radius: 2rem;
+}
