@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e39b561-f383-44df-a178-6da3c333d4b7" name="Default Changelist" comment="" />
+    <list default="true" id="4e39b561-f383-44df-a178-6da3c333d4b7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +44,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dist/media" />
       <recent name="$PROJECT_DIR$/src/scss" />
     </key>
   </component>
@@ -53,7 +59,9 @@
       <option name="presentableId" value="Default" />
       <updated>1583096487180</updated>
       <workItem from="1583096489112" duration="23152000" />
-      <workItem from="1583191801325" duration="7449000" />
+      <workItem from="1583191801325" duration="10438000" />
+      <workItem from="1583270427700" duration="240000" />
+      <workItem from="1583270711554" duration="4714000" />
     </task>
     <servers />
   </component>
@@ -93,5 +101,10 @@
     </state>
     <state x="43" y="23" width="1189" height="877" key="dock-window-3/0.23.1440.877@0.23.1440.877" timestamp="1583240290544" />
     <state x="1163" y="38" width="1189" height="1352" key="dock-window-3/0.23.2560.1417/2560.23.2560.1417@2560.23.2560.1417" timestamp="1583194870463" />
+    <state x="3244" y="330" width="1192" height="1093" key="search.everywhere.popup" timestamp="1583271507435">
+      <screen x="2560" y="23" width="2560" height="1417" />
+    </state>
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1583250290874" />
+    <state x="3244" y="330" width="1192" height="1093" key="search.everywhere.popup/2560.23.2560.1417/0.23.2560.1417@2560.23.2560.1417" timestamp="1583271507435" />
   </component>
 </project>

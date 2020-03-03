@@ -8,13 +8,14 @@
   background-color: $primary-light-color;
   border-bottom: $secondary-dark-color 1px solid;
   #nav-bar-content{
-    height: 5rem;
+    height: 8vh;
     display: flex;
     justify-content: space-between;
-    //margin: 1rem;
+    h1{
+      margin-left: 0.5rem;
+    }
     #nav-menu{
-      display: flex;
-      li{
+      display: flex; li{
         padding: 0 0.75rem;
         font-size: 1.3rem;
       }
@@ -48,10 +49,12 @@
     h1{
       font-size: 6.5rem;
       margin-bottom: 1rem;
+      text-align: center;
     }
     p{
       font-size: 1.5rem;
       margin-bottom: 4rem;
+      text-align: center;
     }
     .arrow{
       font-size: 5rem;
@@ -74,13 +77,13 @@
 
 #quote-section{
   position: relative;
-  height: 40vh;
   background: $primary-light-color;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-content: center;
+  padding: 5rem 0;
   #quote-section-content{
     font-family: "Lato", sans-serif;
     text-align: center;
@@ -102,54 +105,61 @@
 
 
 #attractions{
-  height: 80vh;
-  //width: 100vw;
-  background-color: $secondary-dark-color;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  background-color: rgba($secondary-dark-color, 0.5);
   #attractions-content{
-    height: 70%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
     #attractions-title{
       font-family: Lato, sans-serif;
       font-size: 3rem;
       margin-bottom: 0.5rem;
+      animation: moveRight 0.6s ease-in-out 0.2s backwards;
+    }
+    @keyframes moveRight{
+      0% {
+        transform: translateX(-40px);
+      }
+      100% {
+        transform: translateX(0px);
+        opacity: 1;
+      }
     }
     #attractions-paragraph{
       font-family: Lato, sans-serif;
       font-size: 1.2rem;
     }
     #attractions-gallery{
+      //height: 70vh;
+      width: 90%;
+      margin: 0 auto 5rem auto;
       display: grid;
-      border: 5px solid $primary-light-color;
-      margin-top: 2rem;
-      grid-template-areas:
-              "dome street lighthouse"
-              "dome ferris-wheel field";
-      #street{
-        grid-area: street;
-      }
-      #ferris-wheel{
-        grid-area: ferris-wheel;
-      }
-      #lighthouse{
-        grid-area: lighthouse;
-      }
-      #field{
-        grid-area: field;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(7, 4vw);
+      grid-gap: 1rem;
+      img{
+        width: 100%;
+        height: 100%;
+        border: 1rem $primary-light-color solid;
       }
       #dome{
-        //height: 59vh;
-        grid-area: dome;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 8;
       }
-      img {
-       border: 5px solid white;
+      #lighthouse{
+        grid-column-start: 5;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 4;
+      }
+      #street{
+        grid-column-start: 5;
+        grid-column-end: 9;
+        grid-row-start: 4;
+        grid-row-end: 8;
       }
     }
+    }
   }
-}
