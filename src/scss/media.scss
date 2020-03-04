@@ -1,13 +1,138 @@
-//@media only screen and (max-width: 1025px) {
-//  html{
-//    width: 100vh;
-//    #welcome-section {
-//      #welcome-video {
-//        width: 100vh;
-//      }
-//    }
-//    #attractions{
-//      width: 100vh;
-//    }
-//  }
-//}
+@import "config";
+
+@media screen and (max-width: 2000px) {
+  html{
+    body{
+      #attractions{
+        #attractions-content{
+          #attractions-title{
+          }
+          #attractions-gallery{
+            width: 90%;
+            margin-left: -2rem;
+          }
+        }
+      }
+      #quote-section{
+        #quote-section-content{
+          #quote-paragraph{
+            margin: 0 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  html{
+    body{
+      #attractions{
+        #attractions-content{
+          #attractions-paragraph{
+            margin: 0 1rem 1rem 1rem;
+          }
+          #attractions-gallery{
+            width: 90%;
+            margin-left: -2rem;
+          }
+        }
+      }
+      #quote-section{
+        #quote-section-content{
+          #quote-paragraph{
+            margin: 0 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) and (max-height: 400px){
+  html{
+    body{
+      #nav-bar{
+        padding: 2rem 0;
+      }
+      #welcome-section {
+        #welcome-content {
+          h1{
+            margin-top: 8rem;
+            margin-bottom: -1rem;
+            font-size: 5rem;
+          }
+          p{
+            margin-bottom: 0;
+          }
+          .fa-chevron-down:before{
+            font-size: 65%;
+          }
+      }
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  html {
+    body{
+      #nav-bar {
+        #nav-bar-content {
+          #nav-menu {
+            display: none;
+          }
+        }
+      }
+
+      #welcome-section{
+        #welcome-content{
+          h1{
+            font-size: 2.7rem;
+          }
+          p{
+            font-size: 1.2rem;
+            margin-bottom: 0;
+          }
+          .fa-chevron-down:before{
+            font-size: 70%;
+          }
+        }
+      }
+      #quote-section{
+        padding: 1rem;
+        #quote-section-content{
+          #quote-title {
+            font-size: 2rem;
+          }
+          #quote-paragraph{
+            font-size: 1.1rem;
+          }
+        }
+      }
+      #attractions{
+        #attractions-content{
+          #attractions-title {
+            transition: all 0.5s ease-in-out;
+            transform: translate(-40px, 0);
+            font-size: 2rem;
+          }
+          #attractions-paragraph{
+            font-size: 0.9rem;
+          }
+          #attractions-gallery{
+            width: 90%;
+            grid-gap: 0.25rem;
+            margin-left: -0.75rem;
+            grid-template-rows: repeat(7, 8vw);
+            margin-bottom: 1rem;
+            img{
+              border: 0.25rem $primary-light-color solid;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

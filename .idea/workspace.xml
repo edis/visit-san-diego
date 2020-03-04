@@ -5,8 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/media/attractions-water-boat.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/media.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/media.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/media.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +63,7 @@
       <workItem from="1583096489112" duration="23152000" />
       <workItem from="1583191801325" duration="10438000" />
       <workItem from="1583270427700" duration="240000" />
-      <workItem from="1583270711554" duration="6796000" />
+      <workItem from="1583270711554" duration="14934000" />
     </task>
     <servers />
   </component>
@@ -88,11 +89,11 @@
     </state>
     <state x="3614" y="653" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.2560.1417/2560.23.2560.1417@2560.23.2560.1417" timestamp="1583188687527" />
     <state x="3616" y="655" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/2560.23.2560.1417/0.23.2560.1417@2560.23.2560.1417" timestamp="1583114073817" />
-    <state x="211" y="23" width="1189" height="877" key="dock-window-1" timestamp="1583248837989">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="1088" y="210" width="1119" height="1070" key="dock-window-1" timestamp="1583357355867">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="211" y="23" width="1189" height="877" key="dock-window-1/0.23.1440.877@0.23.1440.877" timestamp="1583248837989" />
-    <state x="1207" y="140" width="951" height="959" key="dock-window-1/2560.23.2560.1417/0.23.2560.1417@2560.23.2560.1417" timestamp="1583098329468" />
+    <state x="1088" y="210" width="1119" height="1070" key="dock-window-1/2560.23.2560.1417/0.23.2560.1417@2560.23.2560.1417" timestamp="1583357355867" />
     <state x="2082" y="246" width="872" height="994" key="dock-window-2" timestamp="1583102921209">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
