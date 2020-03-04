@@ -63,7 +63,7 @@ a {
     transform: translate(-40px, 0);
     font-size: 2rem; }
   html body #attractions #attractions-content #attractions-paragraph {
-    font-size: 0.9rem; }
+    font-size: 1rem; }
   html body #attractions #attractions-content #attractions-gallery {
     width: 90%;
     grid-gap: 0.25rem;
