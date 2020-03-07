@@ -14,16 +14,6 @@
     h1{
       margin-left: 0.5rem;
     }
-    #nav-menu{
-      display: flex; li{
-        padding: 0 0.75rem;
-        font-size: 1.3rem;
-      }
-      a:hover{
-        color: $secondary-dark-color;
-      }
-    }
-
   }
 }
 
@@ -52,7 +42,7 @@
       text-align: center;
     }
     p{
-      font-size: 1.5rem;
+      font-size: 2rem;
       margin-bottom: 4rem;
       text-align: center;
     }
@@ -87,6 +77,16 @@
   #quote-section-content{
     font-family: "Lato", sans-serif;
     text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    transform: translate(0, -100px);
+
+    &.show {
+      transform: none;
+      visibility: visible;
+      opacity: 1;
+    }
     #quote-title{
       font-size: 3rem;
       margin-bottom: 1rem;
@@ -116,10 +116,11 @@
       font-family: Lato, sans-serif;
       font-size: 3rem;
       margin-bottom: 0.5rem;
+      margin-top: 1rem;
       visibility: hidden;
       opacity: 0;
-      transition: all 0.5s ease-in-out;
-      transform: translate(-100px, 0);
+      transition: all 1s ease-in-out;
+      transform: translate(-400px, 0);
 
       &.show {
         transform: none;
@@ -130,12 +131,14 @@
     #attractions-paragraph{
       font-family: Lato, sans-serif;
       font-size: 1.2rem;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
     }
     #attractions-gallery{
       //height: 70vh;
       width: 120%;
       margin-left: -1rem;
-      margin-bottom: 5rem;
+      margin-bottom: 4rem;
       display: grid;
       grid-template-columns: repeat(8, 1fr);
       grid-template-rows: repeat(7, 4vw);
@@ -166,3 +169,35 @@
     }
     }
   }
+
+#footer{
+  height: 20vh;
+  background: rgba($primary-dark-color, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  #footer-content{
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    #footer-contact{
+      display: flex;
+      font-size: 3rem;
+      i{
+        margin: 0 0.75rem;
+      }
+      a:hover{
+        color: $secondary-light-color;
+      }
+    }
+    .nav-menu {
+      padding: 0;
+    }
+    .logo{
+      font-size: 3rem;
+    }
+  }
+}

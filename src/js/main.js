@@ -63,7 +63,7 @@ function init() {
 }
 
 
-const items = document.querySelectorAll('#attractions-title ');
+const items = document.querySelectorAll('#attractions-title, #quote-section-content');
 
 const isInViewport = el => {
     const rect = el.getBoundingClientRect();

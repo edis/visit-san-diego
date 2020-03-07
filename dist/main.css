@@ -1,11 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
-
-body {
+  box-sizing: border-box;
   font-family: "Staatliches", sans-serif;
   color: #000000; }
+  body ::selection {
+    background-color: lightblue; }
 
 ul {
   list-style: none; }
@@ -17,11 +17,11 @@ a {
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
-
-body {
+  box-sizing: border-box;
   font-family: "Staatliches", sans-serif;
   color: #000000; }
+  body ::selection {
+    background-color: lightblue; }
 
 ul {
   list-style: none; }
@@ -45,6 +45,14 @@ a {
   padding: 0.2rem 0.5rem;
   border-radius: 2rem; }
 
+.nav-menu {
+  display: flex; }
+  .nav-menu li {
+    padding: 0 0.75rem;
+    font-size: 1.3rem; }
+  .nav-menu a:hover {
+    color: #e1e1e1; }
+
 #nav-bar {
   position: fixed;
   top: 0;
@@ -58,13 +66,6 @@ a {
     justify-content: space-between; }
     #nav-bar #nav-bar-content h1 {
       margin-left: 0.5rem; }
-    #nav-bar #nav-bar-content #nav-menu {
-      display: flex; }
-      #nav-bar #nav-bar-content #nav-menu li {
-        padding: 0 0.75rem;
-        font-size: 1.3rem; }
-      #nav-bar #nav-bar-content #nav-menu a:hover {
-        color: #e1e1e1; }
 
 #welcome-section {
   width: 100%; }
@@ -88,7 +89,7 @@ a {
       margin-bottom: 1rem;
       text-align: center; }
     #welcome-section #welcome-content p {
-      font-size: 1.5rem;
+      font-size: 2rem;
       margin-bottom: 4rem;
       text-align: center; }
     #welcome-section #welcome-content .arrow {
@@ -114,7 +115,15 @@ a {
   padding: 5rem 0; }
   #quote-section #quote-section-content {
     font-family: "Lato", sans-serif;
-    text-align: center; }
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+    transform: translate(0, -100px); }
+    #quote-section #quote-section-content.show {
+      transform: none;
+      visibility: visible;
+      opacity: 1; }
     #quote-section #quote-section-content #quote-title {
       font-size: 3rem;
       margin-bottom: 1rem; }
@@ -138,21 +147,24 @@ a {
       font-family: Lato, sans-serif;
       font-size: 3rem;
       margin-bottom: 0.5rem;
+      margin-top: 1rem;
       visibility: hidden;
       opacity: 0;
-      transition: all 0.5s ease-in-out;
-      transform: translate(-100px, 0); }
+      transition: all 1s ease-in-out;
+      transform: translate(-400px, 0); }
       #attractions #attractions-content #attractions-title.show {
         transform: none;
         visibility: visible;
         opacity: 1; }
     #attractions #attractions-content #attractions-paragraph {
       font-family: Lato, sans-serif;
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      margin-top: 0;
+      margin-bottom: 1.5rem; }
     #attractions #attractions-content #attractions-gallery {
       width: 120%;
       margin-left: -1rem;
-      margin-bottom: 5rem;
+      margin-bottom: 4rem;
       display: grid;
       grid-template-columns: repeat(8, 1fr);
       grid-template-rows: repeat(7, 4vw);
@@ -176,3 +188,28 @@ a {
         grid-column-end: 9;
         grid-row-start: 4;
         grid-row-end: 8; }
+
+#footer {
+  height: 20vh;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  #footer #footer-content {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #footer #footer-content #footer-contact {
+      display: flex;
+      font-size: 3rem; }
+      #footer #footer-content #footer-contact i {
+        margin: 0 0.75rem; }
+      #footer #footer-content #footer-contact a:hover {
+        color: #d3d3d3; }
+    #footer #footer-content .nav-menu {
+      padding: 0; }
+    #footer #footer-content .logo {
+      font-size: 3rem; }

@@ -19,3 +19,14 @@
   padding: 0.2rem 0.5rem;
   border-radius: 2rem;
 }
+
+.nav-menu{
+  display: flex;
+  li{
+    padding: 0 0.75rem;
+    font-size: 1.3rem;
+  }
+  a:hover{
+    color: $secondary-dark-color;
+  }
+}
