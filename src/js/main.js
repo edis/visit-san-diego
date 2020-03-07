@@ -65,6 +65,8 @@ function init() {
 
 const items = document.querySelectorAll('#attractions-title, #quote-section-content');
 
+
+// Slide In
 const isInViewport = el => {
     const rect = el.getBoundingClientRect();
     return (
