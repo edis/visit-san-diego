@@ -30,6 +30,8 @@ a {
 @media screen and (max-width: 1024px) {
   html body #welcome-section #welcome-content h1 {
     font-size: 6rem; }
+  html body #attractions #attractions-content #attractions-title {
+    transform: translate(-200px, 0); }
   html body #attractions #attractions-content #attractions-paragraph {
     margin: 0 1rem 1rem 1rem; }
   html body #attractions #attractions-content #attractions-gallery {
@@ -37,6 +39,17 @@ a {
     margin-left: -2rem; }
   html body #quote-section #quote-section-content #quote-paragraph {
     margin: 0 0.5rem; }
+  html body #events #events-content p {
+    font-size: 1rem;
+    padding: 0 0.5rem; }
+  html body #events #events-content #events-cards-container {
+    margin: 0 2rem; }
+    html body #events #events-content #events-cards-container #events-cards div.events-card:last-child {
+      display: none; }
+  html body #dining #dining-content p {
+    font-size: 1.2rem; }
+  html body #events #events-content #events-cards-container {
+    margin: 0 1rem; }
   html body #footer #footer-content .logo {
     margin: 0; }
   html body #footer #footer-content .nav-menu {
@@ -84,6 +97,28 @@ a {
     margin-bottom: 1rem; }
     html body #attractions #attractions-content #attractions-gallery img {
       border: 0.25rem #ffffff solid; }
+  html body #events #events-content h1 {
+    font-size: 2rem; }
+  html body #events #events-content p {
+    font-size: 1rem; }
+  html body #events #events-content #events-cards-container {
+    margin: 0; }
+    html body #events #events-content #events-cards-container #events-cards {
+      display: flex;
+      flex-direction: column; }
+      html body #events #events-content #events-cards-container #events-cards div.events-card {
+        margin-bottom: 1.2rem; }
+        html body #events #events-content #events-cards-container #events-cards div.events-card .events-card-text .button-visit a {
+          font-size: 150%; }
+      html body #events #events-content #events-cards-container #events-cards div.events-card:last-child {
+        display: flex;
+        margin-bottom: 0; }
+  html body #dining {
+    height: 40vh; }
+    html body #dining #dining-content h1 {
+      font-size: 2rem; }
+    html body #dining #dining-content p {
+      font-size: 1rem; }
   html body #footer {
     height: 15vh;
     padding: 0.5rem; }

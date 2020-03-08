@@ -170,9 +170,137 @@
     }
   }
 
+#events{
+  background-color: $primary-light-color;
+  #events-content{
+    font-family: Lato, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    h1{
+      font-size: 3rem;
+      margin: 0.5rem;
+    }
+    p{
+      text-align: center;
+      font-size: 1.2rem;
+      margin: 0;
+    }
+    #events-cards-container{
+      #events-cards{
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        .events-card{
+          display: flex;
+          flex-direction: column;
+          border: 1px solid $primary-dark-color;
+          margin: 0 0.75rem;
+          img{
+            height: 20vh;
+          }
+          .events-card-text {
+            text-align: center;
+            h1 {
+              font-size: 1.5rem;
+              margin-bottom: 0;
+            }
+            h3{
+              color: rgba($primary-dark-color, 0.9);
+              margin: 0.25rem;
+              font-size: 1rem;
+            }
+            p {
+              font-size: 1rem;
+              padding: 0 0.5rem;
+            }
+            .button-visit {
+              margin: 0.5rem;
+              position: relative;
+              overflow: hidden;
+              cursor: pointer;
+              display: inline-block;
+              border: 1px solid black;
+              background: $secondary-light-color;
+
+              & a {
+                font-family: "Staatliches", sans-serif;
+                position: relative;
+                left: 0;
+                transition: all .35s ease-Out;
+                font-size: 200%;
+                padding: 0 1rem;
+              }
+              .button-link{
+                color: $primary-dark-color;
+              }
+            }
+            .arrow {
+              font-size: 2rem;
+              width: 100%;
+              height: 100%;
+              background: $selection-color;
+              left: -200px;
+              position: absolute;
+              padding: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transition: all .35s ease-Out;
+              bottom: 0;
+            }
+
+            .button-visit i {
+              height: auto;
+            }
+
+            .button-visit:hover .arrow {
+              left: 0;
+            }
+
+            .button-visit:hover a {
+              left: 150px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#dining{
+  height: 50vh;
+  background: linear-gradient(to top, rgba($primary-dark-color, 0.45), rgba($primary-dark-color, 0.45)), url("media/img/dining-table.jpg") center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  #dining-content{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Lato, sans-serif;
+    color: $primary-light-color;
+    text-align: center;
+    h1{
+      font-size: 3.5rem;
+      margin: 0;
+    }
+    p{
+      font-size: 1.4rem;
+      margin-top: 0.5rem;
+      padding: 0.5rem;
+    }
+  }
+}
+
 #footer{
   height: 20vh;
-  background: rgba($primary-dark-color, 0.3);
+  background: rgba($primary-dark-color, 0.2);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -190,11 +318,13 @@
         margin: 0 0.75rem;
       }
       a:hover{
-        color: $secondary-light-color;
+        color: $selection-color;
+        margin: 0;
       }
     }
     .nav-menu {
       padding: 0;
+      margin: 0 auto;
     }
     .logo{
       font-size: 3rem;

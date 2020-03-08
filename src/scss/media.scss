@@ -20,6 +20,25 @@
           }
         }
       }
+
+      //#events{
+      //  #events-content{
+      //    #events-cards-container{
+      //      #events-cards{
+      //        .events-card{
+      //          .events-card-text{
+      //            .button-visit a{
+      //              transition: none;
+      //              .button-visit:hover .arrow{
+      //                left: -200px;
+      //              }
+      //            }
+      //          }
+      //        }
+      //      }
+      //    }
+      //  }
+      //}
       #footer{
         height: 20vh;
         #footer-content{
@@ -49,6 +68,9 @@
       }
       #attractions{
         #attractions-content{
+          #attractions-title{
+            transform: translate(-200px, 0);
+          }
           #attractions-paragraph{
             margin: 0 1rem 1rem 1rem;
           }
@@ -62,6 +84,37 @@
         #quote-section-content{
           #quote-paragraph{
             margin: 0 0.5rem;
+          }
+        }
+      }
+      #events{
+        #events-content{
+          p{
+            font-size: 1rem;
+            padding: 0 0.5rem;
+          }
+          #events-cards-container{
+            margin: 0 2rem;
+            #events-cards{
+              div.events-card:last-child{
+                display: none;
+              }
+            }
+          }
+        }
+      }
+
+      #dining{
+        #dining-content{
+          p{
+            font-size: 1.2rem;
+          }
+        }
+      }
+      #events {
+        #events-content {
+          #events-cards-container{
+            margin: 0 1rem;
           }
         }
       }
@@ -157,6 +210,46 @@
             img{
               border: 0.25rem $primary-light-color solid;
             }
+          }
+        }
+      }
+      #events {
+        #events-content {
+          h1{
+            font-size: 2rem;
+          }
+          p{
+            font-size: 1rem;
+          }
+          #events-cards-container{
+            margin: 0;
+            #events-cards{
+              display: flex;
+              flex-direction: column;
+              div.events-card{
+                margin-bottom: 1.2rem;
+                .events-card-text{
+                  .button-visit a{
+                    font-size: 150%;
+                  }
+                }
+              }
+              div.events-card:last-child {
+                display: flex;
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+      #dining{
+        height: 40vh;
+        #dining-content{
+          h1{
+            font-size: 2rem;
+          }
+          p{
+            font-size: 1rem;
           }
         }
       }
