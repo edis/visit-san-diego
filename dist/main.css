@@ -213,7 +213,8 @@ a {
       #events #events-content #events-cards-container #events-cards .events-card {
         display: flex;
         flex-direction: column;
-        border: 1px solid #000000;
+        border: 1rem solid #ffffff;
+        box-shadow: 0 0 60px rgba(35, 35, 35, 0.08);
         margin: 0 0.75rem; }
         #events #events-content #events-cards-container #events-cards .events-card img {
           height: 20vh; }
@@ -228,43 +229,7 @@ a {
             font-size: 1rem; }
           #events #events-content #events-cards-container #events-cards .events-card .events-card-text p {
             font-size: 1rem;
-            padding: 0 0.5rem; }
-          #events #events-content #events-cards-container #events-cards .events-card .events-card-text .button-visit {
-            margin: 0.5rem;
-            position: relative;
-            overflow: hidden;
-            cursor: pointer;
-            display: inline-block;
-            border: 1px solid black;
-            background: #d3d3d3; }
-            #events #events-content #events-cards-container #events-cards .events-card .events-card-text .button-visit a {
-              font-family: "Staatliches", sans-serif;
-              position: relative;
-              left: 0;
-              transition: all .35s ease-Out;
-              font-size: 200%;
-              padding: 0 1rem; }
-            #events #events-content #events-cards-container #events-cards .events-card .events-card-text .button-visit .button-link {
-              color: #000000; }
-          #events #events-content #events-cards-container #events-cards .events-card .events-card-text .arrow {
-            font-size: 2rem;
-            width: 100%;
-            height: 100%;
-            background: lightblue;
-            left: -200px;
-            position: absolute;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all .35s ease-Out;
-            bottom: 0; }
-          #events #events-content #events-cards-container #events-cards .events-card .events-card-text .button-visit i {
-            height: auto; }
-          #events #events-content #events-cards-container #events-cards .events-card .events-card-text .button-visit:hover .arrow {
-            left: 0; }
-          #events #events-content #events-cards-container #events-cards .events-card .events-card-text .button-visit:hover a {
-            left: 150px; }
+            padding: 0.5rem; }
 
 #dining {
   height: 50vh;
@@ -288,6 +253,50 @@ a {
       font-size: 1.4rem;
       margin-top: 0.5rem;
       padding: 0.5rem; }
+
+#booking #booking-content {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem; }
+  #booking #booking-content h1 {
+    margin: 0.5rem;
+    font-size: 3rem; }
+  #booking #booking-content p {
+    margin-top: 0.25rem;
+    font-size: 1.2rem;
+    text-align: center; }
+  #booking #booking-content #booking-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto 2rem auto; }
+    #booking #booking-content #booking-form .booking-form-section {
+      display: flex;
+      flex-direction: column; }
+      #booking #booking-content #booking-form .booking-form-section label {
+        padding: 0.05rem;
+        font-size: 1.1rem;
+        font-weight: 700; }
+      #booking #booking-content #booking-form .booking-form-section input {
+        border: 1px solid black;
+        height: 3rem;
+        width: 12rem;
+        font-family: "Lato", sans-serif;
+        font-size: 1rem; }
+      #booking #booking-content #booking-form .booking-form-section #form-district {
+        padding: 0 0.5rem; }
+      #booking #booking-content #booking-form .booking-form-section a {
+        margin: 1.4rem 1.25rem 0 1.25rem;
+        padding: 0.3rem 1.25rem;
+        font-size: 1.75rem;
+        text-transform: uppercase;
+        font-family: Staatliches, sans-serif; }
+        #booking #booking-content #booking-form .booking-form-section a:hover {
+          background: lightblue; }
 
 #footer {
   height: 20vh;

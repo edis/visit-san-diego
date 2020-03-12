@@ -1,6 +1,6 @@
 @import "config";
 
-@media screen and (max-width: 2000px) {
+@media screen and (max-width: 2000px){
   html{
     body{
       #attractions{
@@ -20,25 +20,26 @@
           }
         }
       }
-
-      //#events{
-      //  #events-content{
-      //    #events-cards-container{
-      //      #events-cards{
-      //        .events-card{
-      //          .events-card-text{
-      //            .button-visit a{
-      //              transition: none;
-      //              .button-visit:hover .arrow{
-      //                left: -200px;
-      //              }
-      //            }
-      //          }
-      //        }
-      //      }
-      //    }
-      //  }
-      //}
+      #events{
+        #events-content{
+          #events-cards-container{
+            #events-cards{
+              div.events-card{
+                img{
+                  height: 25vh;
+                }
+              }
+            }
+          }
+        }
+      }
+      #booking{
+        #booking-content{
+          #booking-form{
+            //margin-top: 0.5rem;
+          }
+        }
+      }
       #footer{
         height: 20vh;
         #footer-content{
@@ -55,6 +56,15 @@
   }
 }
 
+@media screen and (max-width: 2000px) and (max-height: 1024px){
+  html {
+    body{
+      #footer{
+        height: 30vh;
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 1024px) {
   html{
@@ -87,15 +97,20 @@
           }
         }
       }
+
       #events{
         #events-content{
           p{
-            font-size: 1rem;
             padding: 0 0.5rem;
           }
           #events-cards-container{
             margin: 0 2rem;
             #events-cards{
+              div.events-card{
+                img{
+                  height: 20vh;
+                }
+              }
               div.events-card:last-child{
                 display: none;
               }
@@ -131,6 +146,24 @@
     }
   }
 }
+
+@media screen and (min-width: 1024px) and (min-height: 1024px) and (max-height: 1200px){
+  #events{
+    #events-content{
+      #events-cards-container{
+        #events-cards{
+          div.events-card{
+            img{
+              height: 30vh;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
 @media screen and (max-width: 900px) and (max-height: 400px){
   html{
     body{
@@ -160,6 +193,10 @@
     body{
       #nav-bar {
         #nav-bar-content {
+          display: flex;
+          h1{
+            margin-left: 0.75rem;
+          }
           .nav-menu {
             display: none;
           }
@@ -228,10 +265,10 @@
               flex-direction: column;
               div.events-card{
                 margin-bottom: 1.2rem;
+                img{
+                  height: 25vh;
+                }
                 .events-card-text{
-                  .button-visit a{
-                    font-size: 150%;
-                  }
                 }
               }
               div.events-card:last-child {
@@ -250,6 +287,30 @@
           }
           p{
             font-size: 1rem;
+          }
+        }
+      }
+      #booking{
+        #booking-content{
+          h1{
+            font-size: 2rem;
+          }
+          p{
+            font-size: 1rem;
+          }
+          #booking-form{
+            display: flex;
+            flex-direction: column;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            .booking-form-section {
+              input {
+                margin-bottom: 0.5rem;
+                padding: 0 0.5rem;
+                width: 17rem;
+              }
+
+            }
           }
         }
       }
