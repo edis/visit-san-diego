@@ -91,17 +91,6 @@ window.addEventListener('resize', run);
 window.addEventListener('scroll', run);
 
 
-// Hamburger Menu
-function hamburgerNavbar() {
-    var x = document.getElementsByClassName("nav-menu");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
-}
-
-
 // Smooth Scrolling
 
 

@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css?family=Courgette|Lato:300,500,700|Staatliches&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="media.css">
 </head>
 <body>
 
@@ -21,7 +20,7 @@
                 <h1 id="nav-logo" class="logo center-in-container">San Diego</h1>
 
                 <!-- Nav-Bar Menu-->
-                <ul class="center-in-container nav-menu">
+                <ul class="center-in-container nav-menu" id="menu">
                     <!-- Nav-Bar Items-->
                     <li><a href="#attractions" class="anchor">Attractions</a></li>
                     <li><a href="#events" class="anchor">Events</a></li>
@@ -72,7 +71,7 @@
     </section>
 
     <!--  Attraction Section  -->
-    <section id="attractions" class="anchor-section">
+    <section id="attractions">
         <div class="container">
             <div id="attractions-content">
                 <!-- Attraction Title -->
@@ -94,7 +93,7 @@
     </section>
 
     <!--  Events Section  -->
-    <section id="events" class="anchor-section">
+    <section id="events">
         <div class="container">
             <div id="events-content">
                 <h1>Events</h1>
@@ -151,7 +150,7 @@
         </div>
     </section>
 
-    <section id="dining" class="anchor-section">
+    <section id="dining">
         <div class="container">
             <div id="dining-content">
                 <h1>Dining</h1>
@@ -165,7 +164,7 @@
         </div>
     </section>
 
-    <section id="booking" class="anchor-section">
+    <section id="booking">
         <div class="container">
             <div id="booking-content">
                 <h1>Plan Your Visit</h1>
@@ -205,10 +204,10 @@
                 <h1 class="logo">SAN DIEGO</h1>
 
                 <ul class="center-in-container nav-menu">
-                    <li><a href="#attractions">Attractions</a></li>
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#dining">Dining</a></li>
-                    <li><a href="#booking">Book</a></li>
+                    <li><a href="#attractions" class="anchor">Attractions</a></li>
+                    <li><a href="#events" class="anchor">Events</a></li>
+                    <li><a href="#dining" class="anchor">Dining</a></li>
+                    <li><a href="#booking" class="anchor">Book</a></li>
                 </ul>
             </div>
         </div>
