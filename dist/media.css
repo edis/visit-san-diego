@@ -87,34 +87,12 @@ a {
     font-size: 65%; } }
 
 @media screen and (max-width: 500px) {
-  html body #nav-bar #nav-bar-content h1 {
-    margin-left: 0.75rem; }
-  html body #nav-bar #nav-bar-content #menu {
-    display: none;
-    position: absolute;
-    width: 100%;
-    margin-top: 3.5rem;
-    z-index: 5;
-    background-color: #ffffff; }
-    html body #nav-bar #nav-bar-content #menu li {
-      border-top: 1px #d3d3d3 solid;
-      margin-left: -4rem; }
-    html body #nav-bar #nav-bar-content #menu a {
-      color: #000000;
-      padding: 1rem;
-      text-decoration: none;
-      display: block;
-      margin-left: 0;
-      text-align: center;
-      font-size: 1.5rem; }
-  html body #nav-bar #nav-bar-content a.icon {
-    display: block;
-    position: absolute;
-    right: 0.5rem;
-    top: 0.75rem;
-    font-size: 1.5rem; }
-  html body #nav-bar #nav-bar-content .round-button {
-    background-color: #ffffff; }
+  html body #nav-bar #nav-bar-content {
+    display: flex; }
+    html body #nav-bar #nav-bar-content h1 {
+      margin-left: 0.75rem; }
+    html body #nav-bar #nav-bar-content .nav-menu {
+      display: none; }
   html body #welcome-section #welcome-content h1 {
     font-size: 2.7rem; }
   html body #welcome-section #welcome-content p {
@@ -186,8 +164,3 @@ a {
       font-size: 2rem; }
     html body #footer #footer-content .nav-menu li {
       font-size: 1.2rem; } }
-
-@media (hover: hover) {
-  a:hover {
-    background: #ffffff;
-    color: #000000; } }

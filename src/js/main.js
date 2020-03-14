@@ -104,7 +104,6 @@ function hamburgerNavbar() {
 
 // Smooth Scrolling
 
-let offset = 100;
 
 $('#nav-bar a, .anchor').on('click', function (event) {
     if (this.hash !== ''){
@@ -113,19 +112,10 @@ $('#nav-bar a, .anchor').on('click', function (event) {
 
         $('html, body').animate(
             {
-                scrollTop: $(hash).offset().top - offset
+                scrollTop: $(hash).offset().top - 100
             },
             800
         );
     }
 });
 
-
-function hamburgerNavbar() {
-    var x = document.getElementById("menu");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
-}

@@ -216,40 +216,25 @@
     body{
       #nav-bar {
         #nav-bar-content {
+          display: flex;
           h1{
             margin-left: 0.75rem;
           }
-          #menu{
+          .nav-menu {
             display: none;
-            position: absolute;
-            width: 100%;
-            margin-top: 3.5rem;
-            z-index: 5;
-            background-color: $primary-light-color;
-            li{
-              border-top: 1px $secondary-light-color solid;
-              margin-left: -4rem;
-            }
-            a{
-              color: $primary-dark-color;
-              padding: 1rem;
-              text-decoration: none;
-              display: block;
-              margin-left: 0;
-              text-align: center;
-              font-size: 1.5rem;
-            }
           }
-          a.icon {
-            display: block;
-            position: absolute;
-            right: 0.5rem;
-            top: 0.75rem;
-            font-size: 1.5rem;
-          }
-          .round-button{
-            background-color: $primary-light-color;
-          }
+
+          //a.icon{
+          //  width: 15vw;
+          //  height: 7vh;
+          //  display: flex;
+          //  justify-content: center;
+          //  align-items: center;
+          //  font-size: 1.5rem;
+          //  &:hover{
+          //    color: black;
+          //  }
+          //}
         }
       }
 
@@ -386,9 +371,3 @@
 }
 
 
-@media (hover: hover) {
-  a:hover {
-    background: $primary-light-color;
-    color: $primary-dark-color;
-  }
-}
