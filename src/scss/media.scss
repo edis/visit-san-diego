@@ -118,7 +118,6 @@
           }
         }
       }
-
       #dining{
         #dining-content{
           p{
@@ -161,9 +160,33 @@
       }
     }
   }
+  #booking{
+    #booking-content{
+      #booking-form{
+        .booking-form-section {
+          input {
+            margin: 0;
+          }
+
+        }
+      }
+    }
+  }
 }
-
-
+@media screen and (max-width: 900px) {
+  #booking {
+    #booking-content {
+      #booking-form {
+        .booking-form-section {
+          margin: 0;
+          a{
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 900px) and (max-height: 400px){
   html{
     body{
@@ -200,6 +223,18 @@
           .nav-menu {
             display: none;
           }
+
+          //a.icon{
+          //  width: 15vw;
+          //  height: 7vh;
+          //  display: flex;
+          //  justify-content: center;
+          //  align-items: center;
+          //  font-size: 1.5rem;
+          //  &:hover{
+          //    color: black;
+          //  }
+          //}
         }
       }
 

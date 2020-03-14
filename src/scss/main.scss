@@ -14,6 +14,12 @@
     h1{
       margin-left: 0.5rem;
     }
+    a.icon{
+      display: none;
+      .away{
+        display: none;
+      }
+    }
   }
 }
 
@@ -278,6 +284,7 @@
       .booking-form-section {
         display: flex;
         flex-direction: column;
+        margin: 0 0.5rem;
         label {
           padding: 0.05rem;
           font-size: 1.1rem;

@@ -64,7 +64,15 @@ a {
 
 @media screen and (min-width: 1024px) and (min-height: 1024px) and (max-height: 1200px) {
   #events #events-content #events-cards-container #events-cards div.events-card img {
-    height: 30vh; } }
+    height: 30vh; }
+  #booking #booking-content #booking-form .booking-form-section input {
+    margin: 0; } }
+
+@media screen and (max-width: 900px) {
+  #booking #booking-content #booking-form .booking-form-section {
+    margin: 0; }
+    #booking #booking-content #booking-form .booking-form-section a {
+      margin-left: 1rem; } }
 
 @media screen and (max-width: 900px) and (max-height: 400px) {
   html body #nav-bar {

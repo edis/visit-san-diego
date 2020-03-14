@@ -89,3 +89,33 @@ const run = () =>
 window.addEventListener('load', run);
 window.addEventListener('resize', run);
 window.addEventListener('scroll', run);
+
+
+// Hamburger Menu
+function hamburgerNavbar() {
+    var x = document.getElementsByClassName("nav-menu");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
+
+// Smooth Scrolling
+
+
+$('#nav-bar a, .anchor').on('click', function (event) {
+    if (this.hash !== ''){
+        event.preventDefault();
+        const hash = this.hash;
+
+        $('html, body').animate(
+            {
+                scrollTop: $(hash).offset().top - 100
+            },
+            800
+        );
+    }
+});
+

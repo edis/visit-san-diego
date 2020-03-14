@@ -66,6 +66,10 @@ a {
     justify-content: space-between; }
     #nav-bar #nav-bar-content h1 {
       margin-left: 0.5rem; }
+    #nav-bar #nav-bar-content a.icon {
+      display: none; }
+      #nav-bar #nav-bar-content a.icon .away {
+        display: none; }
 
 #welcome-section {
   width: 100%; }
@@ -276,7 +280,8 @@ a {
     margin: 1rem auto 2rem auto; }
     #booking #booking-content #booking-form .booking-form-section {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      margin: 0 0.5rem; }
       #booking #booking-content #booking-form .booking-form-section label {
         padding: 0.05rem;
         font-size: 1.1rem;
