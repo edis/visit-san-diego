@@ -213,155 +213,207 @@
 }
 @media screen and (max-width: 500px) {
   html {
-    body{
+    body {
       #nav-bar {
         #nav-bar-content {
           display: flex;
-          h1{
+
+          h1 {
             margin-left: 0.75rem;
           }
+
           .nav-menu {
-            display: none;
-          }
+            #menu {
+              display: none;
+              position: absolute;
+              width: 100%;
+              margin-top: 3.5rem;
+              z-index: 5;
+              background-color: $primary-light-color;
 
-          //a.icon{
-          //  width: 15vw;
-          //  height: 7vh;
-          //  display: flex;
-          //  justify-content: center;
-          //  align-items: center;
-          //  font-size: 1.5rem;
-          //  &:hover{
-          //    color: black;
-          //  }
-          //}
-        }
-      }
+              li {
+                border-top: 1px $secondary-light-color solid;
+                margin-left: -4rem;
+              }
 
-      #welcome-section{
-        #welcome-content{
-          h1{
-            font-size: 2.7rem;
-          }
-          p{
-            font-size: 1.2rem;
-            margin-bottom: 0;
-          }
-          .fa-chevron-down:before{
-            font-size: 70%;
-          }
-        }
-      }
-      #quote-section{
-        padding: 1rem;
-        #quote-section-content{
-          #quote-title {
-            font-size: 2rem;
-          }
-          #quote-paragraph{
-            font-size: 1.1rem;
-          }
-        }
-      }
-      #attractions{
-        #attractions-content{
-          #attractions-title {
-            transition: all 0.5s ease-in-out;
-            transform: translate(-40px, 0);
-            font-size: 2rem;
-          }
-          #attractions-paragraph{
-            font-size: 1rem;
-          }
-          #attractions-gallery{
-            width: 90%;
-            grid-gap: 0.25rem;
-            margin-left: -0.75rem;
-            grid-template-rows: repeat(7, 8vw);
-            margin-bottom: 1rem;
-            img{
-              border: 0.25rem $primary-light-color solid;
+              a {
+                color: $primary-dark-color;
+                padding: 1rem;
+                text-decoration: none;
+                display: block;
+                margin-left: 0;
+                text-align: center;
+                font-size: 1.5rem;
+              }
             }
-          }
-        }
-      }
-      #events {
-        #events-content {
-          h1{
-            font-size: 2rem;
-          }
-          p{
-            font-size: 1rem;
-          }
-          #events-cards-container{
-            margin: 0;
-            #events-cards{
-              display: flex;
-              flex-direction: column;
-              div.events-card{
-                margin-bottom: 1.2rem;
-                img{
-                  height: 25vh;
+
+            a.icon {
+              display: block;
+              position: absolute;
+              right: 0.5rem;
+              top: 0.75rem;
+              font-size: 1.5rem;
+            }
+
+            .round-button {
+              background-color: $primary-light-color;
+            }
+
+            #welcome-section {
+              #welcome-content {
+                h1 {
+                  font-size: 2.7rem;
                 }
-                .events-card-text{
+
+                p {
+                  font-size: 1.2rem;
+                  margin-bottom: 0;
+                }
+
+                .fa-chevron-down:before {
+                  font-size: 70%;
                 }
               }
-              div.events-card:last-child {
-                display: flex;
-                margin-bottom: 0;
-              }
             }
-          }
-        }
-      }
-      #dining{
-        height: 40vh;
-        #dining-content{
-          h1{
-            font-size: 2rem;
-          }
-          p{
-            font-size: 1rem;
-          }
-        }
-      }
-      #booking{
-        #booking-content{
-          h1{
-            font-size: 2rem;
-          }
-          p{
-            font-size: 1rem;
-          }
-          #booking-form{
-            display: flex;
-            flex-direction: column;
-            margin-top: 0;
-            margin-bottom: 0.5rem;
-            .booking-form-section {
-              input {
-                margin-bottom: 0.5rem;
-                padding: 0 0.5rem;
-                width: 17rem;
-              }
 
+            #quote-section {
+              padding: 1rem;
+
+              #quote-section-content {
+                #quote-title {
+                  font-size: 2rem;
+                }
+
+                #quote-paragraph {
+                  font-size: 1.1rem;
+                }
+              }
             }
-          }
-        }
-      }
-      #footer{
-        height: 15vh;
-        padding: 0.5rem;
-        #footer-content{
-          #footer-contact{
-            font-size: 2rem;
-          }
-          .logo{
-            font-size: 2rem;
-          }
-          .nav-menu{
-            li {
-              font-size: 1.2rem;
+
+            #attractions {
+              #attractions-content {
+                #attractions-title {
+                  transition: all 0.5s ease-in-out;
+                  transform: translate(-40px, 0);
+                  font-size: 2rem;
+                }
+
+                #attractions-paragraph {
+                  font-size: 1rem;
+                }
+
+                #attractions-gallery {
+                  width: 90%;
+                  grid-gap: 0.25rem;
+                  margin-left: -0.75rem;
+                  grid-template-rows: repeat(7, 8vw);
+                  margin-bottom: 1rem;
+
+                  img {
+                    border: 0.25rem $primary-light-color solid;
+                  }
+                }
+              }
+            }
+
+            #events {
+              #events-content {
+                h1 {
+                  font-size: 2rem;
+                }
+
+                p {
+                  font-size: 1rem;
+                }
+
+                #events-cards-container {
+                  margin: 0;
+
+                  #events-cards {
+                    display: flex;
+                    flex-direction: column;
+
+                    div.events-card {
+                      margin-bottom: 1.2rem;
+
+                      img {
+                        height: 25vh;
+                      }
+
+                      .events-card-text {
+                      }
+                    }
+
+                    div.events-card:last-child {
+                      display: flex;
+                      margin-bottom: 0;
+                    }
+                  }
+                }
+              }
+            }
+
+            #dining {
+              height: 40vh;
+
+              #dining-content {
+                h1 {
+                  font-size: 2rem;
+                }
+
+                p {
+                  font-size: 1rem;
+                }
+              }
+            }
+
+            #booking {
+              #booking-content {
+                h1 {
+                  font-size: 2rem;
+                }
+
+                p {
+                  font-size: 1rem;
+                }
+
+                #booking-form {
+                  display: flex;
+                  flex-direction: column;
+                  margin-top: 0;
+                  margin-bottom: 0.5rem;
+
+                  .booking-form-section {
+                    input {
+                      margin-bottom: 0.5rem;
+                      padding: 0 0.5rem;
+                      width: 17rem;
+                    }
+
+                  }
+                }
+              }
+            }
+
+            #footer {
+              height: 15vh;
+              padding: 0.5rem;
+
+              #footer-content {
+                #footer-contact {
+                  font-size: 2rem;
+                }
+
+                .logo {
+                  font-size: 2rem;
+                }
+
+                .nav-menu {
+                  li {
+                    font-size: 1.2rem;
+                  }
+                }
+              }
             }
           }
         }

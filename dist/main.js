@@ -119,3 +119,11 @@ $('#nav-bar a, .anchor').on('click', function (event) {
     }
 });
 
+function hamburgerNavbar() {
+    var x = document.getElementById("menu");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
