@@ -116,3 +116,10 @@ function hamburgerNavbar() {
         x.style.display = "block";
     }
 }
+
+$(document).on("click", function(event){
+    var $trigger = $(".icon");
+    if($trigger !== event.target && !$trigger.has(event.target).length){
+        $("#menu").hide();
+    }
+});
