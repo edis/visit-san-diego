@@ -117,9 +117,13 @@ function hamburgerNavbar() {
     }
 }
 
-$(document).on("click", function(event){
-    var $trigger = $(".icon");
-    if($trigger !== event.target && !$trigger.has(event.target).length){
-        $("#menu").hide();
-    }
-});
+
+if (screen.width < 500)
+{
+    $(document).on("click", function (event) {
+        var $trigger = $(".icon");
+        if ($trigger !== event.target && !$trigger.has(event.target).length) {
+            $("#menu").hide();
+        }
+    });
+}
