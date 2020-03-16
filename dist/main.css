@@ -53,6 +53,10 @@ a {
   .nav-menu a:hover {
     color: #e1e1e1; }
 
+*::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none; }
+
 #nav-bar {
   position: fixed;
   top: 0;
