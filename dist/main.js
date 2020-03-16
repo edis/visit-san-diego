@@ -127,3 +127,5 @@ if (screen.width < 500)
         }
     });
 }
+
+document.getElementById('welcome-video').play();
